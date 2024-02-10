@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "more-or-less-roughly-enough-rails",
+	"version": "${version}",
+	"name": "more-or-less-roughly-enough-rails",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/more-or-less-roughly-enough-rails/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"nodle66.moreorlessroughlyenoughrails.Moreorlessroughlyenoughrails"
+		],
+		"fabric-datagen": [
+			"nodle66.moreorlessroughlyenoughrails.MoreorlessroughlyenoughrailsDataGenerator"
+		]
+	},
+	"mixins": [
+		"more-or-less-roughly-enough-rails.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.6",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
