@@ -45,3 +45,6 @@ mod models
 
 # generated stuff
 src/main/generated
+
+# mod logo files
+temp mod logo.xcf
