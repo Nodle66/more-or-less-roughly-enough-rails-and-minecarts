@@ -6,17 +6,21 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 public class Moreorlessroughlyenoughrails implements ModInitializer {
-	// This logger is used to write text to the console and the log file.
-	// It is considered best practice to use your mod id as the logger's name.
-	// That way, it's clear which mod wrote info, warnings, and errors.
-    public static final Logger LOGGER = LoggerFactory.getLogger("more-or-less-roughly-enough-rails");
+    private static final String MOD_ID = "moreorlessroughlyenoughrails";
+	public static String getMOD_ID() {
+		return Moreorlessroughlyenoughrails.MOD_ID;
+	}
+	private static final String MOD_AUTHOR = "nodle66";
+	public static String getMOD_AUTHOR() {
+		return Moreorlessroughlyenoughrails.MOD_AUTHOR;
+	}
+	private static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
+	public static void Logger(String info) {
+		Moreorlessroughlyenoughrails.LOGGER.info(info);
+	}
 
 	@Override
 	public void onInitialize() {
-		// This code runs as soon as Minecraft is in a mod-load-ready state.
-		// However, some things (like resources) may still be uninitialized.
-		// Proceed with mild caution.
-
-		LOGGER.info("Hello Fabric world!");
+		Moreorlessroughlyenoughrails.Logger(Moreorlessroughlyenoughrails.getMOD_ID() + " by " + Moreorlessroughlyenoughrails.getMOD_AUTHOR() + " is loading!");
 	}
 }
