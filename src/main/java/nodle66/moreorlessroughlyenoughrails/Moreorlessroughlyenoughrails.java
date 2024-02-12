@@ -2,6 +2,7 @@ package nodle66.moreorlessroughlyenoughrails;
 
 import net.fabricmc.api.ModInitializer;
 
+import nodle66.moreorlessroughlyenoughrails.block.ModBlocks;
 import nodle66.moreorlessroughlyenoughrails.items.ModItemGroups;
 import nodle66.moreorlessroughlyenoughrails.items.ModItems;
 import org.slf4j.Logger;
@@ -26,5 +27,6 @@ public class Moreorlessroughlyenoughrails implements ModInitializer {
 		Moreorlessroughlyenoughrails.Logger(Moreorlessroughlyenoughrails.getMOD_ID() + " by " + Moreorlessroughlyenoughrails.getMOD_AUTHOR() + " is loading!");
 		ModItemGroups.registerModItemGroups();
 		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 	}
 }

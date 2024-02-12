@@ -3,20 +3,23 @@
 	"id": "more-or-less-roughly-enough-rails",
 	"version": "${version}",
 	"name": "more-or-less-roughly-enough-rails",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "Mod that brings more rail and minecart types to your game.",
 	"authors": [
-		"Me!"
+		"Nodle66"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
 		"sources": "https://github.com/FabricMC/fabric-example-mod"
 	},
 	"license": "CC0-1.0",
-	"icon": "assets/more-or-less-roughly-enough-rails/icon.png",
+	"icon": "assets/moreorlessroughlyenoughrails/icon.jpg",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
 			"nodle66.moreorlessroughlyenoughrails.Moreorlessroughlyenoughrails"
+		],
+		"client": [
+			"nodle66.moreorlessroughlyenoughrails.MoreorlessroughlyenoughrailsClient"
 		],
 		"fabric-datagen": [
 			"nodle66.moreorlessroughlyenoughrails.MoreorlessroughlyenoughrailsDataGenerator"

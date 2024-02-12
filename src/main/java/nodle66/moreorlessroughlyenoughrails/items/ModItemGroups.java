@@ -10,6 +10,7 @@ import net.minecraft.registry.Registry;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import nodle66.moreorlessroughlyenoughrails.Moreorlessroughlyenoughrails;
+import nodle66.moreorlessroughlyenoughrails.block.ModBlocks;
 
 public class ModItemGroups {
     public static final ItemGroup MOD_GROUP = Registry.register(
@@ -19,7 +20,7 @@ public class ModItemGroups {
                     .displayName(Text.translatable("itemgroup.moreorlessroughlyenoughrails.group"))
                     .icon(() -> new ItemStack(Items.MINECART))
                     .entries((displayContext, entries) -> {
-                        entries.add(Blocks.RAIL);
+                        entries.add(ModBlocks.SUPERPOWERED_RAIL);
                     })
                     .build()
     );
