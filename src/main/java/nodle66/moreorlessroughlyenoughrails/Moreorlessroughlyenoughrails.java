@@ -21,7 +21,6 @@ public class Moreorlessroughlyenoughrails implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-
 		Moreorlessroughlyenoughrails.Logger(Moreorlessroughlyenoughrails.getMOD_ID() + " by " + Moreorlessroughlyenoughrails.getMOD_AUTHOR() + " is loading!");
 	}
 }
