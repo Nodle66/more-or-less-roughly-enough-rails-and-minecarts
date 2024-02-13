@@ -8,6 +8,7 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import nodle66.moreorlessroughlyenoughrails.Moreorlessroughlyenoughrails;
+import nodle66.moreorlessroughlyenoughrails.block.ModBlocks;
 
 public class ModItems {
 
@@ -18,7 +19,7 @@ public class ModItems {
                 item);
     }
     private static void addItemsToRedstoneItemGroup(FabricItemGroupEntries entries) {
-
+        entries.add(ModBlocks.SUPERPOWERED_RAIL);
     }
     public static void registerModItems() {
         Moreorlessroughlyenoughrails.Logger("Registering mod items for " + Moreorlessroughlyenoughrails.getMOD_ID() + "!");
