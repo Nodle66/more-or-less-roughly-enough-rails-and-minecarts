@@ -42,6 +42,7 @@ replay_*.log
 # custom mod textures
 mod textures
 mod models
+mod screenshots
 
 # generated stuff
 src/main/generated
