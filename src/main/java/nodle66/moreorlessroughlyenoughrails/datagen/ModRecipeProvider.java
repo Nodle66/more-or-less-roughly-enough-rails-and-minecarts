@@ -4,10 +4,12 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
+import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.util.Identifier;
 import nodle66.moreorlessroughlyenoughrails.block.ModBlocks;
+import nodle66.moreorlessroughlyenoughrails.items.ModItems;
 
 public class ModRecipeProvider extends FabricRecipeProvider {
     public ModRecipeProvider(FabricDataOutput output) {
@@ -25,5 +27,10 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.GOLD_INGOT), conditionsFromItem(Items.GOLD_INGOT))
                 .criterion(hasItem(Items.DIAMOND), conditionsFromItem(Items.DIAMOND))
                 .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.SUPERPOWERED_RAIL)));
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.REDSTONE, ModItems.ENDER_CHEST_MINECART, 1)
+                .input(Items.MINECART)
+                .input(Items.ENDER_CHEST)
+                .criterion(hasItem(Items.ENDER_CHEST), conditionsFromItem(Items.ENDER_CHEST))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.ENDER_CHEST_MINECART)));
     }
 }

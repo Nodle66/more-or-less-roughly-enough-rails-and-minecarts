@@ -2,6 +2,7 @@ package nodle66.moreorlessroughlyenoughrails.items;
 
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.minecraft.entity.vehicle.AbstractMinecartEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
 import net.minecraft.item.MinecartItem;
@@ -10,14 +11,12 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import nodle66.moreorlessroughlyenoughrails.Moreorlessroughlyenoughrails;
 import nodle66.moreorlessroughlyenoughrails.block.ModBlocks;
-import nodle66.moreorlessroughlyenoughrails.entity.custom.ModAbstractMinecartEntity;
-import nodle66.moreorlessroughlyenoughrails.items.custom.ModMinecartItem;
 
 public class ModItems {
 
     public static final Item ENDER_CHEST_MINECART = registerModItem(
             "ender_chest_minecart",
-            (Item) new ModMinecartItem(ModAbstractMinecartEntity.Type.ENDER_CHEST, new Item.Settings().maxCount(1))
+            (Item) new MinecartItem(AbstractMinecartEntity.Type.CHEST, new Item.Settings().maxCount(1))
     );
     private static Item registerModItem(String name, Item item) {
         return Registry.register(

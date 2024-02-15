@@ -1,17 +1,6 @@
 package nodle66.moreorlessroughlyenoughrails.entity;
 
-import net.fabricmc.fabric.api.object.builder.v1.entity.FabricEntityTypeBuilder;
-import net.minecraft.entity.EntityType;
-import net.minecraft.entity.SpawnGroup;
-import net.minecraft.registry.Registries;
-import net.minecraft.registry.Registry;
-import net.minecraft.util.Identifier;
-import nodle66.moreorlessroughlyenoughrails.Moreorlessroughlyenoughrails;
-import nodle66.moreorlessroughlyenoughrails.entity.custom.EnderChestMinecartEntity;
 
 public class ModEntities {
-    public static final EntityType<EnderChestMinecartEntity> ENDER_CHEST_MINECART = Registry.register(Registries.ENTITY_TYPE,
-            new Identifier(Moreorlessroughlyenoughrails.getMOD_ID(), "ender_chest_minecart"),
-            FabricEntityTypeBuilder.create(SpawnGroup.MISC, EnderChestMinecartEntity::new)
-                    .build());
+
 }
