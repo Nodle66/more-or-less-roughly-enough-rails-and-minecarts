@@ -2,7 +2,10 @@ package nodle66.moreorlessroughlyenoughrails;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
 import nodle66.moreorlessroughlyenoughrails.block.ModBlocks;
+import nodle66.moreorlessroughlyenoughrails.entity.ModEntities;
+import nodle66.moreorlessroughlyenoughrails.entity.custom.minecart.EnderChestMinecartEntity;
 import nodle66.moreorlessroughlyenoughrails.items.ModItemGroups;
 import nodle66.moreorlessroughlyenoughrails.items.ModItems;
 import org.slf4j.Logger;
@@ -28,5 +31,6 @@ public class Moreorlessroughlyenoughrails implements ModInitializer {
 		ModItemGroups.registerModItemGroups();
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
+		FabricDefaultAttributeRegistry.register(ModEntities.ENDER_CHEST_MINECART, EnderChestMinecartEntity.create());
 	}
 }
