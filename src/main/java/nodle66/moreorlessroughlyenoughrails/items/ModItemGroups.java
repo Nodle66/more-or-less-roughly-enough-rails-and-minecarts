@@ -21,6 +21,7 @@ public class ModItemGroups {
                     .icon(() -> new ItemStack(Items.MINECART))
                     .entries((displayContext, entries) -> {
                         entries.add(ModBlocks.SUPERPOWERED_RAIL);
+                        entries.add(ModItems.ENDER_CHEST_MINECART);
                     })
                     .build()
     );

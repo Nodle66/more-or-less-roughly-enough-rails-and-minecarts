@@ -7,9 +7,7 @@ import net.minecraft.block.PoweredRailBlock;
 import net.minecraft.block.enums.RailShape;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
-import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.vehicle.AbstractMinecartEntity;
-import net.minecraft.text.Text;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.World;
@@ -21,8 +19,15 @@ import nodle66.moreorlessroughlyenoughrails.block.ModBlocks;
 
 @Mixin({AbstractMinecartEntity.class})
 public abstract class AbstractMinecartEntityMixin extends Entity {
+
     public AbstractMinecartEntityMixin(EntityType<?> type, World world) {
         super(type, world);
+    }
+    /*
+        TODO: Mixins into inner class or something you dig?
+     */
+    public static enum Type {
+        ENDER_CHEST;
     }
     @Inject(method = "moveOnRail",
             at = @At(
@@ -64,4 +69,5 @@ public abstract class AbstractMinecartEntityMixin extends Entity {
             }
         }
     }
+
 }
