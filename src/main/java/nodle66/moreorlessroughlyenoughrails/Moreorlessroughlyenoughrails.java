@@ -31,6 +31,6 @@ public class Moreorlessroughlyenoughrails implements ModInitializer {
 		ModItemGroups.registerModItemGroups();
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
-		FabricDefaultAttributeRegistry.register(ModEntities.ENDER_CHEST_MINECART, EnderChestMinecartEntity.create());
+		ModEntities.registerModEntities();
 	}
 }

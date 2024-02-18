@@ -19,4 +19,7 @@ public class ModEntities {
                     SpawnGroup.MISC,
                     EnderChestMinecartEntity::new)
                     .dimensions(EntityDimensions.fixed(0.98f, 0.7f)).build());
+    public static void registerModEntities() {
+        Moreorlessroughlyenoughrails.Logger("Registering mod entities for " + Moreorlessroughlyenoughrails.getMOD_ID() + "!");
+    }
 }
