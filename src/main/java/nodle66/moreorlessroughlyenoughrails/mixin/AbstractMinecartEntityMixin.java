@@ -17,12 +17,6 @@ import nodle66.moreorlessroughlyenoughrails.block.ModBlocks;
 @Mixin({AbstractMinecartEntity.class})
 @Unique
 public abstract class AbstractMinecartEntityMixin {
-
-    /*
-        TODO: Mixins into inner class or something you dig?
-     */
-
-
     @Inject(method = "moveOnRail",
             at = @At(
                     value="TAIL"
