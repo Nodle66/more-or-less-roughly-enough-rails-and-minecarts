@@ -2,5 +2,6 @@
   "itemgroup.moreorlessroughlyenoughrails.group": "More or less roughly enough rails",
   "block.moreorlessroughlyenoughrails.superpowered_rail": "Superpowered Rail",
 
-  "item.moreorlessroughlyenoughrails.ender_chest_minecart": "Minecart with Ender Chest"
+  "item.moreorlessroughlyenoughrails.ender_chest_minecart": "Minecart with Ender Chest",
+  "container.moreorlessroughlyenoughrails.ender_chest_minecart": "Minecart with Ender Chest"
 }

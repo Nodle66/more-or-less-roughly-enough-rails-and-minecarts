@@ -2,5 +2,6 @@
   "itemgroup.moreorlessroughlyenoughrails.group": "Mai mult sau mai puțin cam destule șine",
   "block.moreorlessroughlyenoughrails.superpowered_rail": "Șine superpropulsoare",
 
-  "item.moreorlessroughlyenoughrails.ender_chest_minecart": "Cufăr de Ender în vagonet"
+  "item.moreorlessroughlyenoughrails.ender_chest_minecart": "Cufăr de Ender în vagonet",
+  "container.moreorlessroughlyenoughrails.ender_chest_minecart": "Cufăr de Ender în vagonet"
 }
