@@ -16,6 +16,7 @@ public class ModModelProvider extends FabricModelProvider {
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
         blockStateModelGenerator.registerStraightRail(ModBlocks.SUPERPOWERED_RAIL);
+        blockStateModelGenerator.registerStraightRail(ModBlocks.WOBBLY_RAIL);
     }
 
     @Override

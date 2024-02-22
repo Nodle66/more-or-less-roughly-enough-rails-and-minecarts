@@ -16,6 +16,9 @@ public class ModBlocks {
     public static final Block SUPERPOWERED_RAIL = registerModBlock(
             "superpowered_rail",
             new PoweredRailBlock(FabricBlockSettings.copyOf(Blocks.POWERED_RAIL)));
+    public static final Block WOBBLY_RAIL = registerModBlock(
+            "wobbly_rail",
+            new PoweredRailBlock(FabricBlockSettings.copyOf(Blocks.POWERED_RAIL)));
     private static Block registerModBlock(String name, Block block) {
         registerBlockItem(name, block);
         return Registry.register(Registries.BLOCK, new Identifier(Moreorlessroughlyenoughrails.getMOD_ID(), name), block);

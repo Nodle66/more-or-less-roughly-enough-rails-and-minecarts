@@ -12,5 +12,9 @@ public class MoreorlessroughlyenoughrailsClient implements ClientModInitializer 
                 ModBlocks.SUPERPOWERED_RAIL,
                 RenderLayer.getCutout()
         );
+        BlockRenderLayerMap.INSTANCE.putBlock(
+                ModBlocks.WOBBLY_RAIL,
+                RenderLayer.getCutout()
+        );
     }
 }

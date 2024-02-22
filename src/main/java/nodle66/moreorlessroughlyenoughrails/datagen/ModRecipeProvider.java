@@ -27,5 +27,14 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.GOLD_INGOT), conditionsFromItem(Items.GOLD_INGOT))
                 .criterion(hasItem(Items.DIAMOND), conditionsFromItem(Items.DIAMOND))
                 .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.SUPERPOWERED_RAIL)));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.REDSTONE, ModBlocks.WOBBLY_RAIL, 16)
+                .pattern("C C")
+                .pattern("cRc")
+                .pattern("C C")
+                .input('C', Items.COAL)
+                .input('c', Items.COPPER_INGOT)
+                .input('R', Items.REDSTONE_TORCH)
+                .criterion(hasItem(Items.IRON_INGOT), conditionsFromItem(Items.IRON_INGOT))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.WOBBLY_RAIL)));
     }
 }

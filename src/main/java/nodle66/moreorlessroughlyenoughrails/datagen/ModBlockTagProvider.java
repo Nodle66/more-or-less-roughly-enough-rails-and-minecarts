@@ -18,6 +18,7 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
     protected void configure(RegistryWrapper.WrapperLookup arg) {
         getOrCreateTagBuilder(BlockTags.RAILS)
                 .add(ModBlocks.SUPERPOWERED_RAIL)
+                .add(ModBlocks.WOBBLY_RAIL)
                 ;
 
     }
