@@ -14,11 +14,6 @@ import nodle66.moreorlessroughlyenoughrails.Moreorlessroughlyenoughrails;
 import nodle66.moreorlessroughlyenoughrails.block.ModBlocks;
 
 public class ModItems {
-    public static final Item ENDER_CHEST_MINECART = registerModItem(
-            "ender_chest_minecart",
-            (Item) new MinecartItem(ClassTinkerers.getEnum(AbstractMinecartEntity.Type.class, "ENDER_CHEST"), new Item.Settings().maxCount(1))
-    );
-
     private static Item registerModItem(String name, Item item) {
         return Registry.register(
                 Registries.ITEM,
@@ -27,7 +22,6 @@ public class ModItems {
     }
     private static void addItemsToRedstoneItemGroup(FabricItemGroupEntries entries) {
         entries.add(ModBlocks.SUPERPOWERED_RAIL);
-        entries.add(ModItems.ENDER_CHEST_MINECART);
     }
     public static void registerModItems() {
         Moreorlessroughlyenoughrails.Logger("Registering mod items for " + Moreorlessroughlyenoughrails.getMOD_ID() + "!");
