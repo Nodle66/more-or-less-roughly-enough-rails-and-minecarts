@@ -27,10 +27,5 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.GOLD_INGOT), conditionsFromItem(Items.GOLD_INGOT))
                 .criterion(hasItem(Items.DIAMOND), conditionsFromItem(Items.DIAMOND))
                 .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.SUPERPOWERED_RAIL)));
-        ShapelessRecipeJsonBuilder.create(RecipeCategory.REDSTONE, ModItems.ENDER_CHEST_MINECART, 1)
-                .input(Items.MINECART)
-                .input(Items.ENDER_CHEST)
-                .criterion(hasItem(Items.ENDER_CHEST), conditionsFromItem(Items.ENDER_CHEST))
-                .offerTo(exporter, new Identifier(getRecipeName(ModItems.ENDER_CHEST_MINECART)));
     }
 }

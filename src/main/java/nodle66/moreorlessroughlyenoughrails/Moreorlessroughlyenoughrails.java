@@ -2,12 +2,7 @@ package nodle66.moreorlessroughlyenoughrails;
 
 import net.fabricmc.api.ModInitializer;
 
-import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
-import net.minecraft.entity.vehicle.AbstractMinecartEntity;
-import net.minecraft.text.Text;
 import nodle66.moreorlessroughlyenoughrails.block.ModBlocks;
-import nodle66.moreorlessroughlyenoughrails.entity.ModEntities;
-import nodle66.moreorlessroughlyenoughrails.entity.custom.minecart.EnderChestMinecartEntity;
 import nodle66.moreorlessroughlyenoughrails.items.ModItemGroups;
 import nodle66.moreorlessroughlyenoughrails.items.ModItems;
 import org.slf4j.Logger;

@@ -23,9 +23,6 @@
 		],
 		"fabric-datagen": [
 			"nodle66.moreorlessroughlyenoughrails.MoreorlessroughlyenoughrailsDataGenerator"
-		],
-		"mm:early_risers": [
-			"nodle66.moreorlessroughlyenoughrails.mixin.AbstractMinecartEntityTypeMixin"
 		]
 	},
 	"mixins": [
